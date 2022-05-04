@@ -1,0 +1,1 @@
+$$\sum_{i=1}^{n}\mu(i)\cdot \phi(\frac{n}{i})$$
