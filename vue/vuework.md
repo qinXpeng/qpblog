@@ -40,6 +40,7 @@ vue create vuework
 vue2 安装element-ui
 npm i element-ui --save
 vue3 安装element-plus
+npm install element-plus --save
 ```
 
 全局引入
