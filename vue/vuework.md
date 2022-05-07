@@ -34,6 +34,7 @@ vue create vuework
 ```
 ## 4.安装element-ui
 [element-ui](https://element.eleme.cn/#/zh-CN/component/installation)
+
 [element-plus](https://element-plus.org/zh-CN/component/button.html)
 ```bash
 vue2 安装element-ui
