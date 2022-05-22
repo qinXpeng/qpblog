@@ -1,0 +1,42 @@
+{
+    "name": "qpblog",
+    "version": "1.0.0",
+    "description": "personal_blog",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/qinXpeng/qpblog.git"
+    },
+    "author": "qinpeng",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/qinXpeng/qpblog/issues"
+    },
+    "homepage": "https://github.com/qinXpeng/qpblog#readme",
+    "devDependencies": {
+        "vuepress": "^1.9.7",
+        "vuepress-theme-vdoing": "^1.11.3"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        }
+    },
+    "dependencies": {
+        "dayjs": "^1.11.2",
+        "json2yaml": "^1.1.0",
+        "markdown-it": "^13.0.1",
+        "markdown-it-katex": "^2.0.3",
+        "vuepress-plugin-demo-block": "^0.7.2",
+        "vuepress-plugin-fulltext-search": "^2.2.1",
+        "vuepress-plugin-one-click-copy": "^1.0.6",
+        "vuepress-plugin-thirdparty-search": "^1.0.2",
+        "vuepress-plugin-zooming": "^1.1.8",
+        "yamljs": "^0.3.0"
+    }
+}
