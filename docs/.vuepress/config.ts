@@ -166,8 +166,8 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
                         frontUrl: 'https://cn.bing.com/search?q=',
                     },
                     {
-                        title: '通过百度搜索本站的',
-                        frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+                        title: '通过百度搜索',
+                        frontUrl: 'https://www.baidu.com/s?wd=',
                     },
                 ],
             }

@@ -13,3 +13,5 @@ docs/.vuepress/dist
 
 # mac
 .DS_Store
+
+docs/@pages
