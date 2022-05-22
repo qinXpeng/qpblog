@@ -1,10 +1,8 @@
-/**
- * 提示：如您想使用JS版本的配置文件可参考：https://github.com/xugaoyi/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
- */
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
+import katexp from "markdown-it-katex"
 export default defineConfig4CustomTheme < VdoingThemeConfig > ({
     theme: 'vdoing', // 使用npm主题包
 
@@ -54,7 +52,6 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
         editLinks: false, // 启用编辑
         editLinkText: '编辑',
 
-        //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
         // category: false, // 是否打开分类功能，默认true
         // tag: false, // 是否打开标签功能，默认true
@@ -133,6 +130,8 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
     // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     head: [
         ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+        ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
+        ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }],
         [
             'meta',
             {
@@ -207,10 +206,10 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
         lineNumbers: true,
         extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], 
 
-        // extendMarkdown: md => {
-        //     md.use(require('markdown-it-katex'))
-        //     md.linkify.set({ fuzzyEmail: false })
-        // },
+        extendMarkdown: md => {
+            md.use(katexp)
+            md.set({ html: true });
+        },
 
     },
 
