@@ -26,11 +26,19 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
                 items: [
                     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
                     {
-                        text: 'leetcode',
+                        text: 'LeetCode',
                         items: [
                             { text: '数组', link: '/pages/algorithm/leetcode/array/' },
+                            { text: 'dp', link: '/pages/algorithm/leetcode/ezdp/' },
+                            { text: '链表', link: '/pages/algorithm/leetcode/list/' },
                         ],
                     },
+                    {
+                        text: 'ACM',
+                        items: [
+                            { text: 'KMP', link: '/pages/algorithm/acm/kmp/' },
+                        ],
+                    }
                 ],
             },
             {
@@ -59,11 +67,10 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
         // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
         bodyBgImg: [
-            'http://180.76.107.249:8997/imagecache/qpblog/20200507175828.jpeg',
-            'http://180.76.107.249:8997/imagecache/qpblog/20200507175845.jpeg',
-            'http://180.76.107.249:8997/imagecache/qpblog/20200507175846.jpeg'
+            '/imagecache/qpblog/20200507175845.jpeg',
+            '/imagecache/qpblog/20200507175846.jpeg'
         ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
-        bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
+        bodyBgImgOpacity: 0.9, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
         // titleBadge: false, // 文章标题前的图标是否显示，默认true
         // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
         //   '图标地址1',
