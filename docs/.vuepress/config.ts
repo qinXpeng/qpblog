@@ -97,7 +97,7 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
 
         // 博主信息 (显示在首页侧边栏)
         blogger: {
-            avatar: 'http://180.76.107.249:8997/imagecache/qpblog/16eef50cefad43.jpeg',
+			avatar: '/imagecache/qpblog/catonx.jpeg',
             name: 'qinpeng',
             slogan: '菜鸡日常',
         },
