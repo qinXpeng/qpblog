@@ -23,32 +23,37 @@ export default defineConfig4CustomTheme < VdoingThemeConfig > ({
             {
                 text: '算法',
                 link: '/algorithm/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-                items: [
-                    // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+                // items: [
+                //     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+                //     {
+                //         text: 'LeetCode',
+                //         items: [
+                //             { text: '数组', link: '/pages/algorithm/leetcode/array/' },
+                //             { text: 'dp', link: '/pages/algorithm/leetcode/ezdp/' },
+                //             { text: '链表', link: '/pages/algorithm/leetcode/list/' },
+                //         ],
+                //     },
+                //     {
+                //         text: 'ACM',
+                //         items: [
+                //             { text: 'KMP', link: '/pages/algorithm/acm/kmp/' },
+                //         ],
+                //     }
+                // ],
+            },
+            {
+                text: '后端',
+                items:[
                     {
-                        text: 'LeetCode',
-                        items: [
-                            { text: '数组', link: '/pages/algorithm/leetcode/array/' },
-                            { text: 'dp', link: '/pages/algorithm/leetcode/ezdp/' },
-                            { text: '链表', link: '/pages/algorithm/leetcode/list/' },
-                        ],
+                        text:'GO',
+                        link:'/golang/'
                     },
                     {
-                        text: 'ACM',
-                        items: [
-                            { text: 'KMP', link: '/pages/algorithm/acm/kmp/' },
-                        ],
-                    }
-                ],
-            },
-            {
-                text: 'GO',
-                link: '/golang/'
-            },
-            {
-                text: 'linux',
-                link: '/linux/',
-            },
+                        text: 'linux',
+                        link: '/linux/',
+                    },
+                ]
+            }
 
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
